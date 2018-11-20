@@ -1,0 +1,10 @@
+function reverseString(inputStr){
+    var tempArray = inputStr.split('');
+    var tempChar;
+    for(let i=0;i<tempArray.length/2;i++){
+        tempChar = tempArray[i];
+        tempArray[i] = tempArray[tempArray.length-1-i];
+        tempArray[tempArray.length-1-i] = tempChar;
+    }
+    return tempArray.join('');
+}
